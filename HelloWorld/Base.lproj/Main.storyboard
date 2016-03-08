@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pearlJame" translatesAutoresizingMaskIntoConstraints="NO" id="Avu-Im-bmS">
+                                <rect key="frame" x="-4" y="177" width="328" height="213"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQa-GQ-SbE">
+                                <rect key="frame" x="4" y="254" width="313" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MQa-GQ-SbE" secondAttribute="trailing" constant="-13" id="CJu-XX-yBh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Avu-Im-bmS" secondAttribute="bottom" constant="178" id="DkS-am-ie0"/>
+                            <constraint firstItem="Avu-Im-bmS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Ds1-0s-zlC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MQa-GQ-SbE" secondAttribute="bottom" constant="255" id="Gdr-sE-naG"/>
+                            <constraint firstItem="MQa-GQ-SbE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="234" id="IcU-x0-Od4"/>
+                            <constraint firstItem="Avu-Im-bmS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="157" id="hSB-Se-Qe2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Avu-Im-bmS" secondAttribute="trailing" constant="-20" id="mOd-8q-Lso"/>
+                            <constraint firstItem="MQa-GQ-SbE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="ou5-XC-a8a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteBand" destination="MQa-GQ-SbE" id="GHN-JO-gr4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pearlJame" width="1920" height="1080"/>
+    </resources>
+</document>
